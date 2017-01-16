@@ -5,6 +5,8 @@ This R code cleans data, builds a phylogeny, and then conducts all analyses for 
 
 Please cite the paper if you use the code elsewhere.
 
+> Li, D., Ives, A. R. and Waller, D. M. (2017), Can functional traits account for phylogenetic signal in community composition?. New Phytol. doi:10.1111/nph.14397
+
 `data_clean/` includes functional traits data; other data can be loaded from R package `vegan`.
 
 `Rcode/`:
