@@ -89,7 +89,7 @@ z_traitsRE$B.pvalue
 
 
 ## table 2A, without traits as Random effects
-z_no_traitsRE = communityPGLMM(formula = final.modelR$formula, 
+z_no_traitsRE = communityPGLMM(formula = paste("y ~", paste(names(lme4::fixef(final.modelR))[-1], collapse = "+")), 
                                data = dat, family = "gaussian", 
                                sp = dat$sp, site = dat$site, 
                                random.effects = list(re.sp, re.sp.phy, re.site, 
