@@ -557,6 +557,7 @@ selection = function(veg, trait, phylo, binary = FALSE,
                           REML = F, verbose = F, 
                           s2.init = c(1.5, rep(0.01, (length(re.all)-1))), 
                           reltol = reltol, maxit = maxit)
+      if(!dir.exists("select")) dir.create("select")
       saveRDS(z, file = paste0("select/", output_1$traits[i]), "_z.rds")
       # print(z$convcode)
       
@@ -594,6 +595,7 @@ selection = function(veg, trait, phylo, binary = FALSE,
                           REML = F, verbose = F, 
                           s2.init = c(1.5, rep(0.01, (length(re.all)-1))), 
                           reltol = reltol, maxit = maxit)
+      if(!dir.exists("select")) dir.create("select")
       saveRDS(z, file = paste0("select/", output_1$traits[i]), "_z_binary.rds")
       
       # no trait
